@@ -1,0 +1,6 @@
+# PyTorch CUDA is already installed in the user's .venv.
+# Confirm torch.cuda.is_available() before GPU training.
+ultralytics>=8.4,<9
+opencv-python>=4.8,<5
+numpy>=1.26,<3
+pillow>=10,<13
