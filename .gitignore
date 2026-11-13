@@ -1,23 +1,18 @@
 .venv/
 __pycache__/
 *.pyc
+.env
+.env.*
 
-# Datasets
+# Dataset
 data/
 yolo_road_line/
-
-# Experiments
-runs/
-outputs/
-
-# Temporary files
 *.zip
+
+# Training artifacts
+runs/
+reviews/
+outputs/
 *.cache
 
-# Environment
-.env
-.env.local
-
-# IDE
-.vscode/
-.idea/
+# Keep selected checkpoints in models/

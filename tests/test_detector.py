@@ -13,7 +13,7 @@ class TestLaneDetector(unittest.TestCase):
         self.assertFalse(edges.any())
         
     def test_roi_preserves_shape(self):
-        frame = np.ones((540, 960) dtype=np.uint8) * 255
+        frame = np.ones((540, 960), dtype=np.uint8) * 255
         masked = region_of_interest(frame)
         self.assertEqual(masked.shape, frame.shape)
         self.assertEqual(masked[0, 0], 0)
